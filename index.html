@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Dobrovat Luca - CV</title>
+
+<style>
+    :root {
+        --bg: #0d0f12;
+        --card: #161a1f;
+        --accent: #00ff88;
+        --text: #e6e6e6;
+        --muted: #a0a0a0;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        min-height: 100vh;
+    }
+
+    /* LEFT PANEL */
+    .sidebar {
+        background: var(--card);
+        padding: 30px;
+        border-right: 1px solid #222;
+    }
+
+    .name {
+        font-size: 26px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .title {
+        color: var(--accent);
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .section {
+        margin-top: 30px;
+    }
+
+    .section h2 {
+        color: var(--accent);
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
+    .sidebar p, .sidebar li {
+        color: var(--muted);
+        font-size: 14px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li::before {
+        content: "▹ ";
+        color: var(--accent);
+    }
+
+    /* RIGHT PANEL */
+    .main {
+        padding: 40px;
+    }
+
+    .card {
+        background: var(--card);
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 1px solid #222;
+    }
+
+    .card h2 {
+        color: var(--accent);
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .item {
+        margin-bottom: 15px;
+    }
+
+    .item h3 {
+        font-size: 15px;
+        color: white;
+    }
+
+    .item span {
+        font-size: 13px;
+        color: var(--muted);
+    }
+
+    .highlight {
+        color: var(--accent);
+    }
+
+    a {
+        color: var(--accent);
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* MOBILE */
+    @media(max-width: 768px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LEFT -->
+    <aside class="sidebar">
+        <div class="name">Dobrovat Luca</div>
+        <div class="title">Student Automatică și Calculatoare - CTI</div>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>
+                Student la Facultatea de Automatică și Calculatoare, pasionat de programare și dezvoltare software.
+                Dețin cunoștințe în C, C++, Java și GDScript. Sunt o persoană analitică, dornică să învăț tehnologii noi
+                și să mă dezvolt prin experiență practică.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <p>📞 0742 277 779</p>
+            <p>✉️ cisco.bashz@gmail.com</p>
+            <p>📍 București, România</p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>GDScript</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Languages</h2>
+            <ul>
+                <li>English</li>
+                <li>Romanian</li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- RIGHT -->
+    <main class="main">
+
+        <div class="card">
+            <h2>Education</h2>
+
+            <div class="item">
+                <h3>2020 - 2024</h3>
+                <span>Colegiul Național “Școala Centrală”, București</span>
+            </div>
+
+            <div class="item">
+                <h3>2024 - Present</h3>
+                <span>Universitatea Națională de Știință și Tehnologie POLITEHNICA București</span><br/>
+                <span>Facultatea de Automatică și Calculatoare - CTI</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Projects</h2>
+
+            <div class="item">
+                <h3>Robot - Coș de gunoi automat</h3>
+                <span>
+                    Proiect realizat în echipă: coș de gunoi automat cu deschidere/închidere și indicator de
+                    proximitate pentru utilizare hands-free.
+                </span>
+            </div>
+
+            <div class="item">
+                <h3>Joc Video</h3>
+                <span>
+                    Joc simplu de zaruri între 2 jucători, realizat pentru singleplayer și multiplayer local.
+                </span>
+            </div>
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
